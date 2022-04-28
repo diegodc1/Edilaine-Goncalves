@@ -2,6 +2,10 @@
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
 
+  html {
+    font-size: 120%;
+  }
+
   /* reusable classes */
   .container {
     /* max-width: 1120px; */
