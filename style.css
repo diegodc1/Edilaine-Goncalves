@@ -32,7 +32,8 @@ img {
   --text-color: #718e78;
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
-
+  --rosado: #f5f1ee;
+  --marrom-claro: #b0a89b;
   /* fonts */
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
@@ -52,7 +53,7 @@ html {
 body {
   font: 400 1rem var(--body-font);
   color: var(--text-color);
-  background: var(--body-color);
+  background: var(--text-color-light);
   -webkit-font-smoothing: antialiased;
   font-family: 'Comfortaa', cursive;
 }
@@ -130,7 +131,7 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--body-color);
+  background: var(--text-color-light);
   width: 100%;
 }
 
@@ -347,6 +348,7 @@ nav.show div.icon-close {
   text-align: center;
   align-items: center;
   justify-content: center;
+  background: var(--rosado);
 }
 
 .card h3 {
@@ -412,6 +414,7 @@ nav.show div.icon-close {
   border-radius: 0.25rem;
   border-left: 0.25rem solid var(--base-color);
   margin-bottom: 1.5rem;
+  background: var(--rosado)
 }
 
 
