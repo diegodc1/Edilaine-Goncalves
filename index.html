@@ -23,8 +23,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <body>
     <header id="header">
       <nav class="container">
@@ -131,7 +130,8 @@
       <!-- SERVICES -->
       <section class="section" id="services">
         <div class="container grid">
-          <header>
+          <header class="card header-card">
+            <img src="/assets/fotos/casa.png" alt="">
             <h2 class="title">Atendimento Domiciliar</h2>
             <p class="subtitle">
               Permite que o paciente realize o tratamento no conforto do seu lar, com maior flexibilidade de horários, individualizado e com a presença de seus familiares. Confira nossos serviços:
@@ -226,7 +226,7 @@
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
-          <div class="testimonials">
+          <div class="testimonials1">
             <div class="testimonial">
               <blockquote>
                 <p>
@@ -263,9 +263,13 @@
                   Ana M.
                 </cite>
               </blockquote>
-            </div>
+            </div>            
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
 
-            <div class="testimonial">
+          <div class="testimonials">
+            <div class="testimonial2">
               <blockquote>
                 <p>
                   <span>&ldquo;</span>
@@ -283,10 +287,9 @@
                 </cite>
               </blockquote>
             </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
           </div>
+
+
         </div>
       </section>
 
