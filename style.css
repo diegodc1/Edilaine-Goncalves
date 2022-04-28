@@ -34,6 +34,7 @@ img {
   --body-color: hsl(0 0% 98%);
   --rosado: #f5f1ee;
   --marrom-claro: #b0a89b;
+  --cards: #EEE8AA;
   /* fonts */
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
@@ -350,7 +351,7 @@ nav.show div.icon-close {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background: #D2B48C;
+  background: var(--cards);
 }
 
 .card h3 {
@@ -441,7 +442,7 @@ nav.show div.icon-close {
   border-radius: 0.25rem;
   border-left: 0.3rem solid var(--base-color);
   margin-bottom: 1.5rem;
-  background: #D2B48C;
+  background: var(--cards);
   height: 17rem
 }
 
