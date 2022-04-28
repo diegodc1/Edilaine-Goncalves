@@ -399,6 +399,13 @@
 }
 
 @media (max-width: 500px) {
+
+  #home .image img {
+    position: relative;
+    right: 2.93rem;
+    width: 100%;
+  }
+
   .whatsapp-button {
     gap: 0.4rem;
     width: 7rem;
@@ -452,7 +459,6 @@
     border-radius: 0.25rem;
     border-left: 0.3rem solid var(--base-color);
     margin-bottom: 1.5rem;
-    background: var(--rosado);
     height: auto
   }
 }
