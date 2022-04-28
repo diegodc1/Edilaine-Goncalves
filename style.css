@@ -474,6 +474,14 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
+.links a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*====  FOOTER ============================ */
 footer {
   background: var(--base-color);
@@ -483,7 +491,7 @@ footer.section {
   padding: 4rem 0;
 }
 
-footer .logo {
+footer .footer-logo {
   display: inline-block;
   margin-bottom: 1.5rem;
 }
@@ -510,6 +518,19 @@ footer .social a {
 
 footer .social a:hover {
   transform: translateY(-8px);
+}
+
+.edilaine-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: end;
+  color: var(--text-color-light);
+  height: 100%;
+}
+
+.edilaine-info p:nth-last-child(1) {
+  margin-bottom: 0.75rem;
 }
 
 .whatsapp-button {
@@ -542,430 +563,4 @@ footer .social a:hover {
 .whatsapp-button img {
   width: 1.5rem;
   height: 1.5rem;
-}
-
-
-/*========= MEDIA QUERIES =========*/
-/* extra large devices: 1200 > */
-@media (min-width: 1200px) {
-
-  /* reusable classes */
-  .container {
-    max-width: 1120px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .section {
-    padding: 10rem 0;
-  }
-
-  .section header,
-  #testimonials header {
-    max-width: 32rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .button {
-    height: 3.125rem;
-  }
-
-  /* navigation */
-  nav .menu {
-    opacity: 1;
-    visibility: visible;
-    top: 0;
-  }
-
-  nav .menu ul {
-    display: flex;
-    gap: 2rem;
-  }
-
-  nav .menu ul li a.title {
-    font: 400 1rem var(--body-font);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  nav .menu ul li a.title.active {
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
-  }
-
-  nav .icon-menu {
-    display: none;
-  }
-
-  /* layout */
-  main {
-    margin-top: var(--header-height);
-  }
-
-  /* home */
-  #home .container {
-    grid-auto-flow: column;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  #home .image {
-    order: 1;
-  }
-
-  #home .text {
-    order: 0;
-    max-width: 24rem;
-    text-align: left;
-  }
-
-  /* about */
-  #about .container {
-    margin: 0 auto;
-    grid-auto-flow: column;
-  }
-
-  /* services */
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .card {
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-  }
-
-  /* testimonials */
-  #testimonials .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /*
-  #testimonials blockquote {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-  */
-
-
-  /* contact */
-  #contact .container {
-    grid-auto-flow: column;
-    align-items: center;
-  }
-
-  #contact .text {
-    max-width: 25rem;
-  }
-
-  /* footer */
-  footer.section {
-    padding: 3.75rem 0;
-  }
-
-  footer .container {
-    grid-auto-flow: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  footer .logo {
-    font-size: 2.25rem;
-  }
-}
-
-
-/* large devices: 992 > */
-@media (min-width: 992px) {
-
-  /* reusable classes */
-  .container {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
-  .section {
-    padding: 10rem 0;
-  }
-
-  .section header,
-  #testimonials header {
-    max-width: 32rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .button {
-    height: 3.125rem;
-  }
-
-  /* navigation */
-  nav .menu {
-    opacity: 1;
-    visibility: visible;
-    top: 0;
-  }
-
-  nav .menu ul {
-    display: flex;
-    gap: 2rem;
-  }
-
-  nav .menu ul li a.title {
-    font: 400 1rem var(--body-font);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  nav .menu ul li a.title.active {
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
-  }
-
-  nav .icon-menu {
-    display: none;
-  }
-
-  /* layout */
-  main {
-    margin-top: var(--header-height);
-  }
-
-  /* home */
-  #home .container {
-    margin-left: 2rem;
-    grid-auto-flow: column;
-    justify-content: space-between;
-  }
-
-  #home .image {
-    order: 1;
-  }
-
-  #home .text {
-    order: 0;
-    max-width: 24rem;
-    text-align: left;
-  }
-
-  /* about */
-  #about .container {
-    margin: 0 auto;
-    grid-auto-flow: column;
-  }
-
-  /* services */
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .card {
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-  }
-
-  /* testimonials */
-  #testimonials .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /*
-  #testimonials blockquote {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  */
-
-  /* contact */
-  #contact .container {
-    grid-auto-flow: column;
-    align-items: center;
-  }
-
-  #contact .text {
-    max-width: 25rem;
-  }
-
-  /* footer */
-  footer.section {
-    padding: 3.75rem 0;
-  }
-
-  footer .container {
-    grid-auto-flow: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  footer .logo {
-    font-size: 2.25rem;
-  }
-}
-
-/* medium devices: 768 > */
-@media (min-width: 768px) {
-
-  /* reusable classes */
-  .container {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
-  .section {
-    padding: 10rem 0;
-  }
-
-  .section header,
-  #testimonials header {
-    max-width: 32rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .button {
-    height: 3.125rem;
-  }
-
-  /* navigation */
-  nav .menu {
-    opacity: 1;
-    visibility: visible;
-    top: 0;
-  }
-
-  nav .menu ul {
-    display: flex;
-    gap: 2rem;
-  }
-
-  nav .menu ul li a.title {
-    font: 400 1rem var(--body-font);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  nav .menu ul li a.title.active {
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
-  }
-
-  nav .icon-menu {
-    display: none;
-  }
-
-  /* layout */
-  main {
-    margin-top: var(--header-height);
-  }
-
-  /* home */
-  #home .container {
-    margin-left: 2rem;
-    grid-auto-flow: column;
-    justify-content: space-between;
-  }
-
-  #home .image {
-    order: 1;
-  }
-
-  #home .text {
-    order: 0;
-    max-width: 24rem;
-    text-align: left;
-  }
-
-  /* about */
-  #about .container {
-    margin: 0 auto;
-    grid-auto-flow: column;
-  }
-
-  /* services */
-  .cards {
-    grid-auto-flow: dense;
-  }
-
-  .card {
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-  }
-
-  /* testimonials */
-  #testimonials .container {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  /*
-  #testimonials blockquote {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-  */
-  /* contact */
-  #contact .container {
-    grid-auto-flow: column;
-    align-items: center;
-  }
-
-  #contact .text {
-    max-width: 25rem;
-  }
-
-  /* footer */
-  footer.section {
-    padding: 3.75rem 0;
-  }
-
-  footer .container {
-    grid-auto-flow: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .brand {
-    width: 20rem;
-    /* border: 2px solid green; */
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-  }
-
-  .brand img {
-    width: 100%;
-    height: auto
-  }
-}
-
-@media (max-width: 500px) {
-  .whatsapp-button {
-    gap: 0.4rem;
-    width: 7rem;
-    height: 2rem;
-    font-size: 0.7rem;
-  }
-
-  .whatsapp-button p {
-    color: white
-  }
-
-  .whatsapp-button img {
-    width: 1rem;
-    height: 1rem;
-  }
-
-  .logo img {
-    width: 20%;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 768px) {
-  .logo img {
-    width: 47%;
-  }
 }
