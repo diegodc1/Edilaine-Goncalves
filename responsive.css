@@ -400,10 +400,18 @@
 
 @media (max-width: 500px) {
 
+  .section {
+    padding: calc(0.6rem + var(--header-height)) 0;
+  }
+
   #home .image img {
     position: relative;
     right: 2.93rem;
     width: 100%;
+  }
+
+  #services header {
+    height: 80vh
   }
 
   .whatsapp-button {
