@@ -401,8 +401,13 @@
 @media (max-width: 500px) {
 
   .section {
-    padding: calc(0.6rem + var(--header-height)) 0;
+    padding: 1.5rem 0rem;
   }
+
+  #home {
+    margin-top: 3rem;
+  }
+
 
   #home .image img {
     position: relative;
@@ -410,9 +415,18 @@
     width: 100%;
   }
 
+  #home .image::before {
+    width: 80%;
+  }
+
+  #about {
+    margin-top: 1rem;
+  }
+
   #services header {
     height: 80vh
   }
+
 
   .whatsapp-button {
     gap: 0.4rem;
