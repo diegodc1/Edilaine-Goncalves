@@ -275,6 +275,7 @@ nav.show div.icon-close {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 
 #testimonials .title {
@@ -353,6 +354,10 @@ nav.show div.icon-close {
 }
 
 /*====  CONTACT ============================ */
+#contact {
+  padding: 2rem;
+}
+
 #contact .grid {
   gap: 5rem;
 }
@@ -423,6 +428,7 @@ a:hover {
 /*====  FOOTER ============================ */
 footer {
   background: var(--base-color);
+  padding: 3rem;
 }
 
 footer.section {
@@ -432,6 +438,7 @@ footer.section {
 footer .footer-logo {
   display: inline-block;
   margin-bottom: 1.5rem;
+  width: 30%;
 }
 
 footer .brand p {
