@@ -47,7 +47,7 @@ img {
   --cards: #212e51;
   /* fonts */
   --title-font-size: 1.875rem;
-  --subtitle-font-size: 1rem;
+  --subtitle-font-size: 1.3rem;
 
   --title-font: 'Montserrat', sans-serif;
   --body-font: 'Montserrat', sans-serif;
@@ -69,6 +69,12 @@ body {
 
 .title {
   font: 700 var(--title-font-size) var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+.title-2 {
+  font: 700 var(--subtitle-font-size) var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
